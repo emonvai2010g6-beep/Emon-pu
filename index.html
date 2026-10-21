@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b25">
+  <title>IslamicFunZone — শিখি, খেলি, জিতি</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-icon">✦</span><span>Islamic<span class="green">FunZone</span><small>শিখি • খেলি • জিতি</small></span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="মেনু">☰</button>
+  <nav id="nav">
+    <a href="#games">গেমস</a><a href="#categories">কুইজ</a><a href="#leaderboard">লিডারবোর্ড</a><a href="#about">আমাদের সম্পর্কে</a>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">✦ জ্ঞান হোক আনন্দের সঙ্গে</div>
+      <h1>খেলতে খেলতে<br><span class="green">শিখে নাও</span> নতুন কিছু!</h1>
+      <p>ইসলামিক জ্ঞান, সাধারণ জ্ঞান, ধাঁধা আর ব্রেইন গেম—সব এক জায়গায়। নিজের স্কোর বাড়াও, নতুন লেভেল জয় করো!</p>
+      <div class="hero-actions"><a class="btn primary" href="#categories">কুইজ শুরু করো ↗</a><a class="btn ghost" href="#games">গেমস দেখো</a></div>
+      <div class="hero-stats"><div><b>১০০+</b><small>প্রশ্নের লক্ষ্য</small></div><div><b>বিভিন্ন</b><small>কুইজ ক্যাটাগরি</small></div><div><b>ফ্রি</b><small>খেলতে খরচ নেই</small></div></div>
+    </div>
+    <div class="hero-art" aria-label="ইসলামিক জ্ঞান ও কুইজ">
+      <div class="moon">☾</div><div class="star s1">✦</div><div class="star s2">✧</div>
+      <div class="book">📖</div><div class="art-caption"><span class="live-dot"></span> আজকের জ্ঞান-চ্যালেঞ্জ <b>চলো শুরু করি!</b></div>
+      <div class="floating-card fc1">🏆 <span><b>নতুন রেকর্ড!</b><small>তোমার স্কোর বাড়াও</small></span></div>
+      <div class="floating-card fc2">🧠 <span><b>ব্রেইন টাইম</b><small>মাথা খাটাও, মজা করো</small></span></div>
+    </div>
+  </section>
+  <section class="quick-strip">
+    <div><span>🕌</span><b>ইসলামিক কুইজ</b><small>জ্ঞান বাড়াও</small></div>
+    <div><span>🧠</span><b>ব্রেইন গেম</b><small>বুদ্ধি পরীক্ষা</small></div>
+    <div><span>⚡</span><b>দ্রুত চ্যালেঞ্জ</b><small>সময়ের সঙ্গে লড়ো</small></div>
+    <div><span>🏅</span><b>ব্যাজ ও স্কোর</b><small>নিজের অগ্রগতি</small></div>
+  </section>
+  <section id="categories" class="section">
+    <div class="section-head"><div><div class="eyebrow">তোমার পছন্দের বিষয়</div><h2>কুইজ <span class="green">ক্যাটাগরি</span></h2><p>একটি বিষয় বেছে নাও, তারপর শুরু হোক চ্যালেঞ্জ!</p></div><label class="search"><span>⌕</span><input id="searchInput" placeholder="কুইজ খুঁজুন..." aria-label="কুইজ খুঁজুন"></label></div>
+    <div id="categoryGrid" class="category-grid"></div>
+  </section>
+  <section id="games" class="section game-section">
+    <div class="section-head"><div><div class="eyebrow">খেলার সময়</div><h2>মজার <span class="green">গেম জোন</span></h2><p>ছোট ছোট গেম খেলে নিজের দক্ষতা পরীক্ষা করো।</p></div></div>
+    <div class="game-grid">
+      <button class="game-card" data-game="quick"><span class="game-emoji">⚡</span><span class="game-title">দ্রুত কুইজ</span><span class="game-desc">সময়ের মধ্যে উত্তর দাও</span><span class="game-arrow">↗</span></button>
+      <button class="game-card" data-game="truefalse"><span class="game-emoji">✅</span><span class="game-title">সত্য না মিথ্যা</span><span class="game-desc">তথ্য যাচাই করো</span><span class="game-arrow">↗</span></button>
+      <button class="game-card" data-game="riddle"><span class="game-emoji">🧩</span><span class="game-title">ধাঁধা চ্যালেঞ্জ</span><span class="game-desc">মাথা খাটিয়ে সমাধান</span><span class="game-arrow">↗</span></button>
+      <button class="game-card" data-game="daily"><span class="game-emoji">🎯</span><span class="game-title">আজকের চ্যালেঞ্জ</span><span class="game-desc">প্রতিদিনের বিশেষ প্রশ্ন</span><span class="game-arrow">↗</span></button>
+    </div>
+  </section>
+  <section class="challenge-banner">
+    <div class="challenge-icon">🌟</div><div><div class="eyebrow">আজ থেকেই শুরু</div><h2>প্রতিদিন একটু শিখো, <span class="green">প্রতিদিন এগিয়ে যাও</span></h2><p>প্রশ্নের উত্তর দাও, পয়েন্ট অর্জন করো, নিজের সেরা স্কোর গড়ো।</p></div><button class="btn primary" id="challengeBtn">চ্যালেঞ্জ নাও ↗</button>
+  </section>
+  <section id="leaderboard" class="section leaderboard-section">
+    <div class="section-head"><div><div class="eyebrow">নিজের অগ্রগতি</div><h2>আমার <span class="green">স্কোরবোর্ড</span></h2><p>এই ডিভাইসে তোমার খেলার রেকর্ড দেখা যাবে।</p></div></div>
+    <div class="score-layout"><div class="score-panel"><div class="score-label">মোট পয়েন্ট</div><div class="big-score" id="totalScore">0 <small>pts</small></div><div class="progress"><span id="progressBar"></span></div><div class="score-foot"><span id="levelText">লেভেল ১ • শিক্ষানবিশ</span><span id="nextLevel">পরের লেভেল: 100 পয়েন্ট</span></div></div><div class="badges-panel"><h3>🏅 আমার ব্যাজ</h3><div id="badges" class="badges"><span class="empty">কুইজ খেললে ব্যাজ আনলক হবে!</span></div></div></div>
+    <button id="resetScore" class="text-btn">আমার স্কোর রিসেট করো</button>
+  </section>
+  <section id="about" class="about section"><div><div class="eyebrow">আমাদের লক্ষ্য</div><h2>শেখা হোক <span class="green">মজার</span></h2></div><p>IslamicFunZone একটি শিক্ষামূলক বিনোদনমূলক ওয়েবসাইটের প্রাথমিক সংস্করণ। এখানে কুইজ, ধাঁধা ও সাধারণ জ্ঞানের মাধ্যমে শেখার সুযোগ রয়েছে। ইসলামিক তথ্য যাচাই করে শেখার চেষ্টা করো এবং গুরুত্বপূর্ণ বিষয়ে নির্ভরযোগ্য আলেম বা উৎসের পরামর্শ নাও।</p></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-icon">✦</span><span>Islamic<span class="green">FunZone</span><small>শিখি • খেলি • জিতি</small></span></a><p>© 2026 IslamicFunZone • শেখো, খেলো, ভালো থেকো 💚</p><a href="#top" class="back-top">উপরে ↑</a></footer>
+<div id="quizModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+  <div class="modal-card"><button id="closeModal" class="close-btn" aria-label="বন্ধ">×</button><div id="quizEyebrow" class="eyebrow">কুইজ শুরু</div><h2 id="quizTitle">প্রশ্ন</h2><div class="quiz-meta"><span id="questionCount">প্রশ্ন ১/১০</span><span id="timerLabel">⏱ ২০ সেকেন্ড</span></div><div class="quiz-progress"><span id="quizProgress"></span></div><p id="questionText" class="question-text"></p><div id="answerOptions" class="answer-options"></div><div id="feedback" class="feedback" aria-live="polite"></div><button id="nextQuestion" class="btn primary full hidden">পরের প্রশ্ন →</button></div>
+</div>
+<div id="toast" class="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
